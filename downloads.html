@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Our App</title>
+    <title>تحميل التطبيق</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            padding: 0;
-            background-color: #f4f4f4;
             text-align: center;
+            background-color: #f4f4f4;
+            direction: rtl; /* اجعل الكتابة من اليمين لليسار */
         }
         h1, h2 {
             color: #2c3e50;
         }
+        p {
+            font-size: 18px;
+            color: #34495e;
+        }
         .button-container {
-            margin: 20px 0;
+            margin: 30px 0;
         }
         .svg-button {
-            width: 200px; /* Adjust size as needed */
+            width: 180px; /* تعديل حجم الأيقونات */
             height: auto;
             margin: 15px;
+            transition: transform 0.3s, opacity 0.3s;
             cursor: pointer;
-            transition: transform 0.3s;
         }
         .svg-button:hover {
-            transform: scale(1.1); /* Zoom in on hover */
+            transform: scale(1.1); /* تكبير الأيقونة عند التمرير */
+            opacity: 0.8;
+        }
+        .button-label {
+            display: block;
+            font-size: 18px;
+            margin-top: 5px;
+            color: #2c3e50;
         }
         footer {
             margin-top: 30px;
@@ -38,27 +49,29 @@
     <!-- الرسالة الإشرافية -->
     <h2>إن هذا التطبيق بإشراف سماحة حجة الإسلام والمسلمين السيد مقتدى الصدر (أعزه الله)</h2>
 
-    <!-- English Version -->
-    <h1>Download Our App</h1>
-    <p>Welcome to our application page! You can download our app from both Google Play and Apple App Store using the links below:</p>
+    <!-- عنوان الصفحة -->
+    <h1>تحميل التطبيق</h1>
+    <p>يمكنك تحميل تطبيقنا من المتاجر الرسمية باستخدام الروابط أدناه:</p>
 
-    <!-- Buttons Container -->
+    <!-- أزرار التحميل مع النصوص العربية -->
     <div class="button-container">
-        <!-- Google Play SVG Button -->
+        <!-- زر تحميل من Google Play -->
         <a href="https://play.google.com/store/apps/details?id=com.example.app" target="_blank">
-            <img class="svg-button" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Download on Google Play">
+            <img class="svg-button" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+            <span class="button-label">تحميل من Google Play</span>
         </a>
 
-        <!-- Apple App Store SVG Button -->
+        <!-- زر تحميل من Apple App Store -->
         <a href="https://apps.apple.com/us/app/example-app/id1234567890" target="_blank">
-            <img class="svg-button" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store">
+            <img class="svg-button" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Download_on_the_App_Store_Badge.svg" alt="App Store">
+            <span class="button-label">تحميل من App Store</span>
         </a>
     </div>
 
-    <p>We hope you enjoy using our app. If you have any questions, feel free to contact us at <a href="mailto:info@alsyedalsader.com">info@alsyedalsader.com</a>.</p>
+    <p>إذا كانت لديك أي استفسارات، يرجى التواصل معنا عبر <a href="mailto:info@alsyedalsader.com">info@alsyedalsader.com</a>.</p>
 
     <footer>
-        <p>Last updated: October 5, 2024</p>
+        <p>تاريخ آخر تحديث: 5 أكتوبر 2024</p>
     </footer>
 </body>
 </html>
