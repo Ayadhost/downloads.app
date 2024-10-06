@@ -8,26 +8,29 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
             text-align: center;
         }
         h1, h2 {
             color: #2c3e50;
         }
-        .button {
-            display: inline-block;
-            margin: 15px;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #ffffff;
-            background-color: #3498db;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
+        .button-container {
+            margin: 20px 0;
         }
-        .button img {
-            vertical-align: middle;
-            margin-right: 8px;
-            height: 24px; /* Adjust icon size */
+        .svg-button {
+            width: 200px; /* Adjust size as needed */
+            height: auto;
+            margin: 15px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .svg-button:hover {
+            transform: scale(1.1); /* Zoom in on hover */
+        }
+        footer {
+            margin-top: 30px;
+            color: #7f8c8d;
         }
     </style>
 </head>
@@ -39,17 +42,20 @@
     <h1>Download Our App</h1>
     <p>Welcome to our application page! You can download our app from both Google Play and Apple App Store using the links below:</p>
 
-    <!-- Google Play Button -->
-    <a class="button" href="https://play.google.com/store/apps/details?id=com.example.app" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
-        Google Play
-    </a>
+    <!-- Buttons Container -->
+    <div class="button-container">
+        <!-- Google Play SVG Button -->
+        <a href="https://play.google.com/store/apps/details?id=com.example.app" target="_blank">
+            <img class="svg-button" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Download on Google Play">
+        </a>
 
-    <!-- Apple App Store Button -->
-    <a class="button" href="https://apps.apple.com/us/app/example-app/id1234567890" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Download_on_the_App_Store_Badge.svg" alt="App Store">
-        App Store
-    </a>
+        <!-- Apple App Store SVG Button -->
+        <a href="https://apps.apple.com/us/app/example-app/id1234567890" target="_blank">
+            <img class="svg-button" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store">
+        </a>
+    </div>
+
+    <p>We hope you enjoy using our app. If you have any questions, feel free to contact us at <a href="mailto:info@alsyedalsader.com">info@alsyedalsader.com</a>.</p>
 
     <footer>
         <p>Last updated: October 5, 2024</p>
